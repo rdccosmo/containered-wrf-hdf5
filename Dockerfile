@@ -1,4 +1,4 @@
-FROM rdccosmo/wrfbase
+FROM rdccosmo/wrf-base
 RUN wget http://www.hdfgroup.org/ftp/lib-external/szip/2.1/src/szip-2.1.tar.gz && \
     tar zxvf szip-2.1.tar.gz && \
     rm -f szip-2.1.tar.gz && \
