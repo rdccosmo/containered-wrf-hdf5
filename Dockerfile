@@ -13,10 +13,10 @@ RUN wget http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/
     make && \
     make install && cd ..
 
-RUN wget http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.15-patch1.tar.bz2 && \
-    tar jxvf hdf5-1.8.15-patch1.tar.bz2 && \
-    rm -f hdf5-1.8.15-patch1.tar.bz2 && \
-    cd hdf5-1.8.15-patch1 && \
+RUN wget http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.bz2 && \
+    tar jxvf hdf5-1.8.17.tar.bz2 && \
+    rm -f hdf5-1.8.17.tar.bz2 && \
+    cd hdf5-1.8.17 && \
     ./configure \
         --prefix=$PREFIX \
         --with-zlib=$PREFIX \
